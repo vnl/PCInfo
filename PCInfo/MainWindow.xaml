@@ -1,0 +1,33 @@
+﻿<controls:MetroWindow x:Class="PCInfo.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:dd="clr-namespace:GongSolutions.Wpf.DragDrop;assembly=GongSolutions.Wpf.DragDrop"
+                      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      Title="MainWindow"
+                      Height="350"
+                      Width="525"
+                      BorderBrush="{DynamicResource AccentColorBrush}"
+                      BorderThickness="1"
+                      WindowStartupLocation="CenterScreen"
+                      WindowState="Maximized" >
+
+    <Grid>
+        <TabControl >
+            <TabItem Header="Hardware Info">
+                <Grid >
+                    <CheckBox Content="A CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <DataGrid x:Name="dataGrid" Grid.RowSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Data Storage" />
+            <TabItem Header="Memory" />
+            <TabItem Header="System Info" />
+            <TabItem Header="Network" />
+            <TabItem Header="User Ac. and Security" />
+            <TabItem Header="Developer" />
+            <TabItem Header="Utilities" />
+        </TabControl>
+    </Grid>
+</controls:MetroWindow>
+
